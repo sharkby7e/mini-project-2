@@ -18,10 +18,28 @@ body p {
   justify-content: center;
 }
 
+main {
+display:flex;
+}
+
+.card {
+  display: flex;
+  flex:1 0 auto; 
+  padding: 10px;
+  border-style: dashed;
+  border-width: 5px;
+  margin: 15px;
+}
+
+.card h1 {
+  justify-content: center;
+}
+
 @media screen and (max-width: 992px) {
 }
 
 @media screen and (max-width: 768px) {
 }
+
 
 
