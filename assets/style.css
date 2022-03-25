@@ -1,3 +1,19 @@
+* {
+  font-family: "Arial";
+}
+
 body {
   background: linear-gradient(#5d42f5, #d442f5);
 } 
+
+header {
+  display: flex;
+  color: white ;
+  justify-content: center;
+}
+
+body p {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
