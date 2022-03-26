@@ -21,80 +21,81 @@
       <section class= "largeBox middle">
         <div class= "mediumBox">
           <div class ="smallBox">
-            <h2>Flexbox Row</h2>
-            <p>here is something else iturn down we of ask follow from many we turn run present day old say many day we change we hand
-turn many present old we change work of many say follow hand we over many we present say present
-run run run change ask we down old hand say work show old ask day handd follow change change
-many say follow follow hand we old ask change hand hand of follow we follow hand present day
-many ask we from ask of old hand ask run could down over from change change over run run of many
-say run
-n there</p>
+            <h2>Color Variables</h2>
+            <h3>This allows developers to use variables to adjust color throughout stylesheet</h3>
+            <pre>
+  :root {
+    --primary : indigo;
+    --secondary: lightblue;
+    --card-primary: darkslategrey;
+    --card-secondary: dimgrey;
+   }</pre>
           </div>
         </div> 
 
         <div class= "mediumBox">
           <div class ="smallBox">
-            <h2>Flexbox Column</h2>
-            <p>turn down we of ask follow from many we turn run present day old say many day we change we hand
-turn many present old we change work of many say follow hand we over many we present say present
-run run run change ask we down old hand say work show old ask day handd follow change change
-many say follow follow hand we old ask change hand hand of follow we follow hand present day
-many ask we from ask of old hand ask run could down over from change change over run run of many
-say run
-            </p>
+            <h2>Media Queries</h2>
+            <h3>This detects width of screen and adjusts width of the container for the cards</h3>
+            <pre>
+  @media screen and (min-width: 992px) {
+    .mediumBox{
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }</pre>
           </div>
         </div> 
 
         <div class= "mediumBox">
           <div class ="smallBox">
-            <h2>CSS Grid Layout</h2>
-            <p>here is someturn down we of ask follow from many we turn run present day old say many day we change we hand
-turn many present old we change work of many say follow hand we over many we present say present
-run run run change ask we down old hand say work show old ask day handd follow change change
-many say follow follow hand we old ask change hand hand of follow we follow hand present day
-many ask we from ask of old hand ask run could down over from change change over run run of many
-say run
-thing else in there</p>
+            <h2>Linear-Gradient</h2>
+            <h3>Set's the background to a gradient with two colors</h3>
+            <pre>
+ body {
+   background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+ }</pre>
           </div>
         </div> 
         <div class= "mediumBox">
           <div class ="smallBox">
-            <h2>Linear Gradients</h2>
-            <p>heturn down we of ask follow from many we turn run present day old say many day we change we hand
-turn many present old we change work of many say follow hand we over many we present say present
-run run run change ask we down old hand say work show old ask day handd follow change change
-many say follow follow hand we old ask change hand hand of follow we follow hand present day
-many ask we from ask of old hand ask run could down over from change change over run run of many
-say run
-re is something else in there</p>
+            <h2>Overlay Card with Title</h2>
+            <h3>This allows developers to overlay a container with a header</h3>
+            <pre>
+.smallBox h2{
+  position: relative;
+  top: -20px;
+}</pre>
           </div>
         </div> 
         <div class= "mediumBox">
           <div class ="smallBox">
-            <h2>Box Transition Glow</h2>
-            <p>herturn down we of ask follow from many we turn run present day old say many day we change we hand
-turn many present old we change work of many say follow hand we over many we present say present
-run run run change ask we down old hand say work show old ask day handd follow change change
-many say follow follow hand we old ask change hand hand of follow we follow hand present day
-many ask we from ask of old hand ask run could down over from change change over run run of many
-say run
- e is something else in there</p>
+            <h2>FlexBox Row</h2>
+            <h3>This creates a flexible container that sets its contained elements in line</h3>
+            <pre>
+.largeBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}</pre>
           </div>
         </div> 
         <div class= "mediumBox">
-          <div class ="smallBox">
-            <h2>Overlay Card With Title</h2>
-            <p>here is turn down we of ask follow from many we turn run present day old say many day we change we hand
-turn many present old we change work of many say follow hand we over many we present say present
-run run run change ask we down old hand say work show old ask day handd follow change change
-many say follow follow hand we old ask change hand hand of follow we follow hand present day
-many ask we from ask of old hand ask run could down over from change change over run run of many
-say run
-something else in there</p>
+          <div class ="smallBox"> 
+            <h2>FlexBox Column</h2>
+            <h3>This creates a flexible container that sets its contained elements block style</h3>
+            <pre>
+.smallBox {
+  display: flex; 
+  flex-direction: column;
+}</pre>
           </div>
         </div> 
 
       </section>
     </main>
+    <footer>
+      <h4>Made with Guessing and Checking of some extremely touchy CSS</h4>
+    </footer>
   </body>
 </html>

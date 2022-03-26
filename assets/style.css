@@ -44,6 +44,7 @@ header h1 {
 .mediumBox {
   flex: 1 0 100%;
   transition: flex-basis 500ms linear;
+  display: flex;
 }
 
 .smallBox {
@@ -54,14 +55,20 @@ header h1 {
   border: dashed var(--secondary) 6px; 
   margin:15px;
   align-items: center;
-  transition: flex-wrap 0.5s ease-in-out
+  transition: flex-wrap 0.5s ease-in-out;
+  flex-grow: 1;
 } 
 
+.smallBox:hover,
+.smallBox:hover h2{
+  box-shadow:  0 0 10px 12px darkslategrey, inset 0 0 15px 12px darkslategrey;
+}
+
 .smallBox h2{
-  font-size: 30px;
-  color: whitesmoke;
   position: relative;
   top: -20px;
+  font-size: 30px;
+  color: whitesmoke;
   padding: 6px;
   background-color: var(--card-secondary);
   border-radius: 6px;
@@ -69,10 +76,35 @@ header h1 {
   transition: flex-wrap 0.5s ease-in-out
 }
 
-.smallBox p {
+.smallBox h3{
+  font-size: 18px;
+  font-weight: 200;
+  color: whitesmoke;
+  padding: 6px;
+}
+
+.smallBox pre {
+  align-self: stretch;
+  flex-grow: 1;
+  background-color: var(--card-secondary);
+  white-space: pre-wrap;
+  overflow: auto;
+  font-family: 'Courier New', Courier, monospace;
   color: whitesmoke; 
-  padding: 9px; 
+  margin: 3px;
+  padding: 9px;
+  border-radius: 4px;
   line-height: 1.1;
+  user-select: all;
+  -moz-user-select: all;
+  -webkit-user-select: all;
+}
+
+footer {
+  text-align: center; 
+}
+footer h4{
+  color: whitesmoke;
 }
 
 @media screen and (min-width: 768px) {
