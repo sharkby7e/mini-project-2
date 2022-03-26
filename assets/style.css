@@ -7,6 +7,7 @@
 
 * {
   font-family: "Arial";
+  font-size:24px
 }
 
 body {
@@ -18,10 +19,12 @@ header {
   padding: 18px; 
   color: white;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 header h1 {
   margin: 6px;
+  font-size:40px; 
 }
 
 
@@ -29,6 +32,9 @@ header h1 {
   justify-content:center;
 }
 
+.giant {
+  margin: 12px;
+}
 .large {
   display: flex;
   flex-wrap: wrap;
@@ -37,15 +43,25 @@ header h1 {
 
 .medium {
   flex: 1 0 100%;
-  background-color: var(--card-primary);
    
 }
 
 .small {
   display: flex; 
   flex-direction: column;
-  justify-content: flex-start;
- 
+  background-color: var(--card-primary);
+  justify-content:  flex-start;
+  border: dashed var(--secondary) 6px; 
+  margin: 9px;
+  align-items: center;
+} 
+
+.small h2{
+  position: relative;
+  top: -15px;
+  padding: 6px;
+  background-color: var(--card-secondary);
+  outline: dashed white 3px;
 }
 
 @media screen and (min-width: 768px) {
