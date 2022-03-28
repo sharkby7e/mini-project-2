@@ -55,7 +55,7 @@ header h1 {
   border: dashed var(--secondary) 6px; 
   margin:15px;
   align-items: center;
-  transition: flex-wrap 0.5s ease-in-out;
+  transition: 0.8s ease;
   flex-grow: 1;
 } 
 
@@ -73,7 +73,7 @@ header h1 {
   background-color: var(--card-secondary);
   border-radius: 6px;
   outline: dotted wheat 3px;
-  transition: flex-wrap 0.5s ease-in-out
+  transition: 0.8s ease;
 }
 
 .smallBox h3{
